@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220706 22:56:35.838" rpa="false" schemaversion="3">
+<suite id="s1" name="Bugbank" source="C:\Users\Guilherme Jump\Desktop\Robot_Teste\BugBank\bugbank.robot">
+<test id="s1-t1" name="Processo de login BugBank" line="7">
+<kw name="Acessar o site" library="bugbank">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220706 22:56:36.103" level="INFO">Opening browser 'Chrome' to base url 'https://bugbank.netlify.app'.</msg>
+<status status="PASS" starttime="20220706 22:56:36.103" endtime="20220706 22:56:42.573"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220706 22:56:42.573" endtime="20220706 22:56:42.690"/>
+</kw>
+<status status="PASS" starttime="20220706 22:56:36.103" endtime="20220706 22:56:42.690"/>
+</kw>
+<kw name="Fazer login" library="bugbank">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_EMAIL}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 22:56:42.691" level="INFO">Typing text 'guilhermejump@gmail.com' into text field 'css=#__next &gt; div &gt; div.pages__FormBackground-sc-1ee1f2s-2.jNpkvU &gt; div &gt; div.card__login &gt; form &gt; div.style__ContainerFieldInput-sc-s3e9ea-0.gQAEIG.input__child &gt; input'.</msg>
+<status status="PASS" starttime="20220706 22:56:42.691" endtime="20220706 22:56:42.841"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_SENHA}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220706 22:56:42.842" level="INFO">Typing text '1234' into text field 'css=#__next &gt; div &gt; div.pages__FormBackground-sc-1ee1f2s-2.jNpkvU &gt; div &gt; div.card__login &gt; form &gt; div.login__password &gt; div &gt; input'.</msg>
+<status status="PASS" starttime="20220706 22:56:42.842" endtime="20220706 22:56:42.930"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${BOTAO_ACESSAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220706 22:56:42.930" level="INFO">Clicking button 'css=#__next &gt; div &gt; div.pages__FormBackground-sc-1ee1f2s-2.jNpkvU &gt; div &gt; div.card__login &gt; form &gt; div.login__buttons &gt; button.style__ContainerButton-sc-1wsixal-0.otUnI.button__child'.</msg>
+<status status="PASS" starttime="20220706 22:56:42.930" endtime="20220706 22:56:43.037"/>
+</kw>
+<status status="PASS" starttime="20220706 22:56:42.690" endtime="20220706 22:56:43.037"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220706 22:56:43.038" endtime="20220706 22:56:45.365"/>
+</kw>
+<status status="PASS" starttime="20220706 22:56:36.103" endtime="20220706 22:56:45.366"/>
+</test>
+<status status="PASS" starttime="20220706 22:56:35.840" endtime="20220706 22:56:45.367"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Bugbank">Bugbank</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
